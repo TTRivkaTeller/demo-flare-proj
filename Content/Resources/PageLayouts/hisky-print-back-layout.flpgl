@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="7in" Height="9in" Padding="1in" PageSize="A4" PaddingLeft="2.4cm" PaddingRight="2.25cm" PaddingTop="2.54cm" PaddingBottom="2.4cm" PageType="title" Name="Back Cover" Orientation="portrait" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in" BackgroundType="Solid" BackgroundColor="transparent" BackgroundRepeat="stretch" BackgroundImage="FrontBackMatter/hisky-cover-background.png">
+        <Frame X="0px" Y="851px" Width="618px" Height="49px" Flow="body" Right="0px" Bottom="36px" Anchors="" />
+        <Frame X="-28px" Y="-40px" Width="5.688542cm" Height="2.883958cm" Flow="decoration0" Right="431px" Bottom="867px" BackgroundImage="FrontBackMatter/hisky-logo.png" BackgroundRepeat="stretch" Anchors="" />
+    </Page>
+</PageStyles>

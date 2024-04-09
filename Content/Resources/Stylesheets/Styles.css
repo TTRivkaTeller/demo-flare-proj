@@ -1,0 +1,646 @@
+/*<meta />*/
+
+@font-face {
+	font-family: "Poppins";
+	src: url("Fonts/Poppins-Regular.ttf") format("ttf");
+	font-weight: 400;
+  }
+  
+  @font-face {
+	font-family: "Poppins";
+	src: url("Fonts/Poppins-SemiBold.ttf") format("ttf");
+	font-weight: 600;
+  }
+  
+  @font-face {
+	font-family: "Poppins";
+	src: url("Fonts/Poppins-Light.ttf") format("ttf");
+	font-weight: 300;
+  
+  }
+  
+  @font-face {
+	font-family: "Poppins";
+	src: url("Fonts/Poppins-Medium.ttf") format("ttf");
+	font-weight: 600;
+  }
+
+  @font-face {
+	font-family: "Poppins";
+	src: url("Fonts/Poppins-Bold.ttf") format("ttf");
+	font-weight: 700;
+  }
+
+:root
+{
+	--Brand1: #069DDA;
+	--Black: #000000;
+	--Dark: #000000;
+	--White: #ffffff;
+}
+
+body
+{
+	color: var(--Dark);
+	font-family: "Poppins", sans-serif;
+	mc-hyphenate: never;
+	font-size: 11pt;
+}
+
+/* Content */
+
+tr
+{
+	page-break-inside: avoid;
+	page-break-after: auto;
+}
+
+img
+{
+	border: none;
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: auto;
+	max-width: 100%;
+	mc-thumbnail-max-width: 400px;
+	margin: 10pt 0;
+}
+
+img.nopopup
+{
+	mc-thumbnail: none;
+	margin: 3pt 0;
+}
+
+img.medium
+{
+	mc-thumbnail-max-width: 240pt;
+}
+
+img.icon
+{
+	height: 11pt;
+	width: auto;
+	margin: 0;
+	mc-thumbnail: none;
+}
+
+p
+{
+	font-size: 11pt;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	widows: 3;
+	orphans: 3;
+}
+
+p.center
+{
+	text-align: center;
+}
+
+p.figure-caption,
+p.table-caption
+{
+	font-weight: 600;
+	font-size: 10pt;
+	font-style: italic;
+	margin-bottom: 4pt;
+	page-break-before: avoid;
+	margin: 20px 0px 0px;
+}
+
+p.figure-caption
+{
+	margin-top: 0pt;
+}
+
+p.cover-title
+{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 44pt;
+	color: var(--Black);
+	text-align: center;
+	line-height: 1.2;
+}
+
+p.cover-subtitle
+{
+	font-family: "Poppins", sans-serif;
+	font-size: 32pt;
+	color: var(--Black);
+	text-align: center;
+	font-weight: 500;
+}
+
+p.table-text
+{
+	font-size: 11pt;
+}
+
+/* PDF front matter */
+
+MadCap|TOCProxy,
+MadCap|listOfProxy
+{
+	border: none !important;
+	margin: 0 0 0 -1.14cm;
+	padding: 0;
+}
+
+p.TOC1,
+p.list-of
+{
+	color: black;
+	font-size: 12pt;
+	font-weight: normal;
+	page-break-after: avoid;
+}
+
+p.footer {
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
+}
+
+p.list-of
+{
+	mc-leader-format: '.';
+}
+
+p.TOC2
+{
+	color: black;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: 0.5cm;
+}
+
+p.TOC3
+{
+	color: black;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: 0.6in;
+}
+
+/* Headings */
+
+h1
+{
+	font-weight: 700;
+	font-size: 24pt;
+	color: var(--Brand1);
+	page-break-after: avoid;
+	margin: 0px 0px 25px 0px;
+}
+
+h1.nobreak
+{
+	page-break-before: auto;
+}
+
+h1.toc
+{
+	mc-auto-number-format: '';
+	margin-left: -1.14cm;
+	mc-heading-level: 0;
+}
+
+h1.appendix
+{
+	
+}
+
+h2
+{
+	font-weight: 700;
+	font-size: 18pt;
+	page-break-before: auto;
+	page-break-after: avoid;
+	margin: 25px 0px 5px;
+}
+
+h3
+{
+	font-weight: 700;
+	font-size: 14pt;
+	page-break-after: avoid;
+	mc-heading-level: 0;
+	margin: 25px 0px 5px;
+}
+
+h4
+{
+	font-weight: 700;
+	font-size: 12pt;
+	page-break-after: avoid;
+	mc-heading-level: 0;
+	margin: 15px 0px 5px;
+}
+
+/* Links */
+
+a
+{
+	color: var(--Brand1);
+}
+
+a:link
+{
+	color: var(--Brand1);
+}
+
+a:visited
+{
+	color: var(--Brand1);
+}
+
+MadCap|xref
+{
+	text-decoration: underline;
+	color: var(--Brand1);
+	mc-format: '{paranumonly}';
+}
+
+MadCap|xref.TOCPageNumber,
+MadCap|xref.ListOfPageNumber
+{
+	background: transparent;
+}
+
+/* Lists */
+
+li li
+{
+	page-break-inside: avoid;
+}
+
+dd,
+dt,
+li,
+li p,
+dt p,
+dd p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+dl,
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul ul
+{
+	list-style-type: circle;
+}
+
+ul ul ul
+{
+	list-style-type: none;
+}
+
+ul ul ul > li::marker
+{
+	content: '- ';
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ol ol ol
+{
+	list-style-type: lower-roman;
+}
+
+ol
+{
+	margin-left: 0cm;
+}
+
+ul
+{
+	margin-left: 0cm;
+}
+
+li ul
+{
+	padding-left: 0.5cm;
+}
+
+li ol
+{
+	padding-left: 0.6cm;
+}
+
+/* Notes */
+
+div.note
+{
+	border-bottom: 1px solid var(--Brand1);
+	margin: 20px 0;
+	max-width: 90%;
+	padding-bottom: 2px;
+}
+
+div.note:before
+{
+	color: var(--Brand1);
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--Brand1);
+	width: 100%;
+}
+
+div.warning,
+div.important
+{
+	border-bottom: 1px solid var(--Black);
+	margin: 20px 0;
+	max-width: 90%;
+	padding-bottom: 2px;
+}
+
+div.warning:before,
+div.important:before
+{
+	color: var(--Brand1);
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--Black);
+	width: 100%;
+}
+
+div.note:before
+{
+	display: block;
+	content: "Note";
+	line-height: 18px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	padding-top: 10px;
+}
+
+
+div.warning:before
+{
+	background-image: url('Images/warning.svg');
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	display: block;
+	content: "Warning";
+	height: 40px;
+	line-height: 40px;
+	color: #000000;
+}
+
+div.important:before
+{
+	background-image: url('Images/important.svg');
+	background-repeat: no-repeat;
+	padding-left: 45px;
+	display: block;
+	content: "Important";
+	height: 40px;
+	line-height: 40px;
+	color: #000000;
+}
+
+div.note > ul:first-child,
+div.warning > ul:first-child,
+div.important > ul:first-child,
+div.note > ol:first-child,
+div.warning > ol:first-child,
+div.important > ol:first-child,
+div.note > p:first-child,
+div.warning > p:first-child
+div.important > p:first-child
+{
+	padding-top: 2px !important;
+}
+
+.kwn
+{
+	page-break-after: avoid;
+}
+
+div.keep-together
+{
+	page-break-inside: avoid;
+}
+
+div.note
+{
+	margin-top: 7px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	margin: 8px 0px 24px;
+}
+
+div.warning, div.important
+{
+	color: #000000;
+}
+
+td div.warning,
+td div.note,
+td div.important
+{
+	border-bottom: 200px solid white;
+}
+
+h4
+{
+	color: #000000;
+}
+
+h5, h6 {
+	mc-disabled: true;
+}
+
+MadCap|TOCProxy
+{
+	border-top-color: transparent;
+}
+
+@media print
+{
+	body
+	{
+		font-size: 11pt;
+		font-family: Calibri, Arial, sans-serif;
+	}
+
+	/* Content */
+
+	p
+	{
+		color: black;
+		margin-bottom: 4px;
+		margin-top: 4px;
+	}
+
+	p.figure-caption
+	{
+		mc-auto-number-format: 'GF:Figure {n+}: ';
+	}
+
+	p.table-caption
+	{
+		mc-auto-number-format: 'GT:Table {n+}: ';
+	}
+
+	dd,
+	dd p,
+	dt,
+	dt p,
+	li,
+	li p
+	{
+		margin-bottom: 4px;
+		margin-top: 4px;
+	}
+
+	ol
+	{
+		margin-left: 0.6cm;
+	}
+
+	ul
+	{
+		margin-left: 0.4cm;
+	}
+
+	li ol
+	{
+		margin-left: 0cm;
+	}
+
+	li ul
+	{
+		margin-left: 0cm;
+	}
+
+	p.table-text,
+	td p
+	{
+		font-size: 9pt;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* Headings */
+
+	h1
+	{
+		font-size: 14pt;
+		margin-bottom: 0cm;
+		color: black;
+		font-weight:700;
+		mc-auto-number-format: 'GH:{n+}. ';
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 1.2cm;
+	}
+
+	h1.appendix
+	{
+		font-size: 14pt;
+		margin-bottom: 0cm;
+		color: black;
+		mc-auto-number-format: 'GA:Appendix {A+}: ';
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 2.8cm;
+		margin-left: 1.7cm;
+	}
+
+	h2
+	{
+		font-size: 13pt;
+		margin-bottom: 0;
+		color: black;
+		mc-auto-number-format: 'GH:{n}.{n+}. ';
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 1.2cm;
+	}
+
+	h3
+	{
+		font-size: 12pt;
+		margin-bottom: 0;
+		color: black;
+		mc-auto-number-format: 'GH:{n}.{n}.{n+}. ';
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 1.2cm;
+	}
+
+	h4
+	{
+		font-size: 11pt;
+		margin-bottom: 0;
+		color: black;
+	}
+
+	/* Images */
+
+	img.medium
+	{
+		width: 240pt;
+		height: auto;
+	}
+
+	/* Links */
+
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: "{quote}{para}{quote} {pageref}";
+		text-decoration: none;
+		background: #d1d6db;
+		color: black;
+	}
+
+	div.warning::before
+	{
+		border-bottom: 1px solid var(--Brand1);
+		background-image: url('Images/warning.svg');
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #000000;
+		padding-left: 45px;
+		padding-bottom: 2px;
+	}
+
+	div.important::before
+	{
+		border-bottom: 1px solid var(--Brand1);
+		background-image: url('Images/important.svg');
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #000000;
+		padding-left: 45px;
+		padding-bottom: 2px;
+	}
+
+}
+
+MadCap|xref.ParaTextOnly
+{
+	mc-format: '{paratext}';
+}
+
+MadCap|xref.ListNumber
+{
+	mc-format: '{paranum}';
+}
+
+MadCap|xref.IndexPageNumber
+{
+	mc-format: '{paranum}';
+}
+

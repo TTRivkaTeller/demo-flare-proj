@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="Doc Number"
+    Comment=""
+    EvaluatedDefinition="DOC: UGKU16FD001">DOC: UGKU16FD001</Variable>
+  <Variable
+    Name="Rev Number"
+    Comment=""
+    EvaluatedDefinition="Rev 0.1">Rev 0.1</Variable>
+  <Variable
+    Name="Date"
+    Comment=""
+    EvaluatedDefinition="October 2022">October 2022</Variable>
+  <Variable
+    Name="Cover Title"
+    Comment=""
+    EvaluatedDefinition="Dynamic Terminal Ku 16X16 Flat">Dynamic Terminal Ku 16X16 Flat</Variable>
+  <Variable
+    Name="Doc Type"
+    Comment=""
+    EvaluatedDefinition="User Guide">User Guide</Variable>
+  <Variable
+    Name="Create Date"
+    Comment=""
+    EvaluatedDefinition="Created: 01 March 2024">Created: 01 March 2024</Variable>
+  <Variable
+    Name="Update Date"
+    Comment=""
+    EvaluatedDefinition="Last Update: 01 April 2024">Last Update: 01 April 2024</Variable>
+  <Variable
+    Name="Cover Disclaimer"
+    Comment=""
+    EvaluatedDefinition="This document is the proprietary property of hiSky SCS Ltd.">This document is the proprietary property of hiSky SCS Ltd.</Variable>
+  <Variable
+    Name="PN"
+    Comment=""
+    EvaluatedDefinition="P/N: HSK2411202105">P/N: HSK2411202105</Variable>
+</CatapultVariableSet>
